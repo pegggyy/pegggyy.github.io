@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reel — Peggy Wei</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/shared/favicon-pw.svg">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components/nav.css">
+  <link rel="stylesheet" href="css/components/gallery.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/pages/reel.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lottie Player -->
+  <script src="https://unpkg.com/@dotlottie/player-component@1.3.0/dist/dotlottie-player.js"></script>
+</head>
+<body>
+
+  <header class="nav-header">
+    <div class="nav-bar container">
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/images/shared/logo-name.svg" alt="Peggy Wei" class="nav__logo-img">
+        </a>
+        <button class="nav__toggle" aria-label="Toggle menu">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+        <ul class="nav__links">
+          <li><a href="index.html" class="nav__link">portfolio<dotlottie-player src="https://lottie.host/97ee2883-2f7b-48a2-a53d-8f58aceecf75/Szd4zWiJlh.lottie" speed="1" style="width:100%;height:100%"></dotlottie-player></a></li>
+          <li><a href="reel.html" class="nav__link nav__link--active">reel<dotlottie-player src="https://lottie.host/97ee2883-2f7b-48a2-a53d-8f58aceecf75/Szd4zWiJlh.lottie" speed="1" style="width:100%;height:100%"></dotlottie-player></a></li>
+          <li><a href="about.html" class="nav__link">about<dotlottie-player src="https://lottie.host/97ee2883-2f7b-48a2-a53d-8f58aceecf75/Szd4zWiJlh.lottie" speed="1" style="width:100%;height:100%"></dotlottie-player></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="reel-hero section container">
+      <h1 class="reel-hero__heading">
+        <span class="reel-hero__title-line">Reel
+          <span class="reel-hero__sparkles" aria-hidden="true">
+            <img src="assets/images/shared/sparkle-blue.png" alt="" class="reel-hero__sparkle reel-hero__sparkle--1">
+            <img src="assets/images/shared/sparkle-blue.png" alt="" class="reel-hero__sparkle reel-hero__sparkle--2">
+            <img src="assets/images/shared/sparkle-blue.png" alt="" class="reel-hero__sparkle reel-hero__sparkle--3">
+          </span>
+        </span>
+      </h1>
+      <p class="reel-hero__subtitle">Shelved projects, side quests and fun creations.</p>
+    </section>
+
+    <section class="reel section container">
+      <div class="gallery">
+
+        <button class="gallery__card" data-lightbox="0" type="button" aria-label="View Experimentation tool">
+          <div class="gallery__image-wrap">
+            <img src="assets/images/reel/1 Page Experiments.png" alt="Page Experiments" class="gallery__image" loading="lazy">
+          </div>
+          <div class="gallery__body">
+            <span class="gallery__label">Experimentation tool</span>
+            <p class="gallery__description">Shipped A/B and multivariate testing for Rokt partners to optimise conversion rates.</p>
+          </div>
+        </button>
+
+        <button class="gallery__card" data-lightbox="1" type="button" aria-label="View Post-checkout offers">
+          <div class="gallery__image-wrap">
+            <img src="assets/images/reel/2 Thank You Page.png" alt="Thank You Page" class="gallery__image" loading="lazy">
+          </div>
+          <div class="gallery__body">
+            <span class="gallery__label">Post-checkout offers</span>
+            <p class="gallery__description">Designed a page to show relevant offers after a purchase.</p>
+          </div>
+        </button>
+
+        <button class="gallery__card" data-lightbox="2" type="button" aria-label="View Ticketing discovery">
+          <div class="gallery__image-wrap">
+            <img src="assets/images/reel/3 Ticketing research.png" alt="Ticketing Research" class="gallery__image" loading="lazy">
+          </div>
+          <div class="gallery__body">
+            <span class="gallery__label">Ticketing discovery</span>
+            <p class="gallery__description">Identified insights and opportunities for ticketing upsells and cross-sells.</p>
+          </div>
+        </button>
+
+        <button class="gallery__card" data-lightbox="3" type="button" aria-label="View Rokt hackathon">
+          <div class="gallery__image-wrap">
+            <img src="assets/images/reel/4 Roktathon.png" alt="Roktathon" class="gallery__image" loading="lazy">
+          </div>
+          <div class="gallery__body">
+            <span class="gallery__label">Rokt hackathon</span>
+            <p class="gallery__description">Designed a simple dashboard that highlights revenue performance and next best action.</p>
+          </div>
+        </button>
+
+        <button class="gallery__card" data-lightbox="4" type="button" aria-label="View Catholic Schools Parramatta Diocese">
+          <div class="gallery__image-wrap">
+            <img src="assets/images/reel/5 CEDP.png" alt="CEDP" class="gallery__image" loading="lazy">
+          </div>
+          <div class="gallery__body">
+            <span class="gallery__label">Catholic Schools Parramatta Diocese</span>
+            <p class="gallery__description">UI design for school enrolment and search.</p>
+          </div>
+        </button>
+
+        <button class="gallery__card" data-lightbox="5" type="button" aria-label="View Drug intervention">
+          <div class="gallery__image-wrap">
+            <img src="assets/images/reel/6 Crystal Clear.png" alt="Crystal Clear" class="gallery__image" loading="lazy">
+          </div>
+          <div class="gallery__body">
+            <span class="gallery__label">Drug intervention</span>
+            <p class="gallery__description">Launched Crystal Clear, an online intervention tool for ice users.</p>
+          </div>
+        </button>
+
+        <button class="gallery__card" data-lightbox="6" type="button" aria-label="View Name tracker">
+          <div class="gallery__image-wrap">
+            <img src="assets/images/reel/7 Susana.png" alt="Susana" class="gallery__image" loading="lazy">
+          </div>
+          <div class="gallery__body">
+            <span class="gallery__label">Name tracker</span>
+            <p class="gallery__description">Designed an app for a friend to track how often their name gets misspelled.</p>
+          </div>
+        </button>
+
+        <button class="gallery__card" data-lightbox="7" type="button" aria-label="View First portfolio">
+          <div class="gallery__image-wrap">
+            <img src="assets/images/reel/8 First Portfolio.png" alt="First Portfolio" class="gallery__image" loading="lazy">
+          </div>
+          <div class="gallery__body">
+            <span class="gallery__label">First portfolio</span>
+            <p class="gallery__description">Where it all started...</p>
+          </div>
+        </button>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Overlay -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" fill="none"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+
+    <div class="lightbox__content">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close lightbox">
+        <svg viewBox="0 0 24 24" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <img class="lightbox__image" id="lightbox-image" src="" alt="">
+
+      <div class="lightbox__caption">
+        <span class="lightbox__label" id="lightbox-label"></span>
+        <p class="lightbox__description" id="lightbox-description"></p>
+      </div>
+
+      <span class="lightbox__counter" id="lightbox-counter"></span>
+    </div>
+
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next image">
+      <svg viewBox="0 0 24 24" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">Living, working and learning on Gadigal land.</p>
+      <nav class="footer__links">
+        <a href="mailto:wei.peggy21@gmail.com" class="footer__link">Email</a>
+        <a href="https://linkedin.com/in/peggywei" class="footer__link">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

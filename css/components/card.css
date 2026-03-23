@@ -1,0 +1,77 @@
+/* ======================
+   Cards — Neo-Brutalist
+   ====================== */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+.card {
+  display: block;
+  background-color: var(--surface-50);
+  border: 3px solid var(--accent-700);
+  border-radius: var(--radius-card-top);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition:
+    transform var(--duration-fast) var(--ease-snap),
+    box-shadow var(--duration-fast) var(--ease-snap);
+}
+
+.card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-active);
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card__body {
+  padding: var(--space-6);
+}
+
+.card__tag {
+  display: inline-block;
+  font-family: var(--font-secondary);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+  color: var(--accent-700);
+  background-color: var(--primary-200);
+  border: 2px solid var(--accent-700);
+  padding: var(--space-0-5) var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.card__title {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-2);
+}
+
+.card__description {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-regular);
+  color: var(--accent-700);
+  margin-bottom: 0;
+}
+
+/* --- Tablet: 2 columns --- */
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

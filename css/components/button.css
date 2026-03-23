@@ -1,0 +1,59 @@
+/* ======================
+   Buttons — Neo-Brutalist
+   ====================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-secondary);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-normal);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  border: 3px solid var(--accent-700);
+  cursor: pointer;
+  transition:
+    transform var(--duration-fast) var(--ease-snap),
+    box-shadow var(--duration-fast) var(--ease-snap),
+    background-color var(--duration-fast) var(--ease-snap);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn__arrow {
+  display: inline-block;
+  font-size: 1.2em;
+  transition: transform var(--duration-fast) var(--ease-snap);
+}
+
+.btn:hover .btn__arrow {
+  transform: rotate(-45deg);
+}
+
+.btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+.btn--primary {
+  background-color: var(--primary-500);
+  color: var(--accent-700);
+}
+
+.btn--primary:hover {
+  background-color: var(--primary-400);
+  color: var(--accent-700);
+}
+
+.btn--secondary {
+  background-color: var(--secondary-300);
+  color: var(--accent-700);
+}
+
+.btn--secondary:hover {
+  background-color: var(--secondary-200);
+}
